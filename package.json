@@ -26,6 +26,7 @@
     "global-modules": "^0.2.3"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.9",
     "mocha": "^2.5.3"
   },
   "keywords": [
@@ -45,5 +46,29 @@
     "user",
     "user-home",
     "userhome"
-  ]
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "findup-sync",
+        "expand-tilde",
+        "resolve-modules"
+      ]
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
 }
