@@ -10,7 +10,9 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "LICENSE",
+    "README.md"
   ],
   "main": "index.js",
   "engines": {
@@ -20,13 +22,11 @@
     "test": "mocha"
   },
   "dependencies": {
-    "expand-tilde": "^1.2.0",
-    "global-modules": "^0.2.0"
+    "expand-tilde": "^1.2.2",
+    "global-modules": "^0.2.3"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*",
-    "user-home": "^2.0.0"
+    "mocha": "^2.5.3"
   },
   "keywords": [
     "dir",
@@ -40,6 +40,7 @@
     "modules",
     "npm",
     "path",
+    "resolve",
     "tilde",
     "user",
     "user-home",

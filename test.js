@@ -7,24 +7,23 @@
 
 'use strict';
 
-/* deps:mocha */
+require('mocha');
+var os = require('os');
 var assert = require('assert');
-var userhome = require('user-home');
-
 var gm = require('global-modules');
 var resolve = require('./');
 
-describe('resolve', function () {
-  it('should return a local directory path unchanged:', function () {
+describe('resolve', function() {
+  it('should return a local directory path unchanged:', function() {
     assert.equal(resolve('a'), 'a');
   });
 
-  it('should resolve the path to user home:', function () {
-    assert.equal(resolve('~'), userhome);
-    assert.equal(resolve('~/foo'), userhome + '/foo');
+  it('should resolve the path to user home:', function() {
+    assert.equal(resolve('~'), os.homedir());
+    assert.equal(resolve('~/foo'), os.homedir() + '/foo');
   });
 
-  it('should resolve the path to global npm modules:', function () {
+  it('should resolve the path to global npm modules:', function() {
     assert.equal(resolve('@'), gm);
     assert.equal(resolve('@/foo'), gm + '/foo');
   });
