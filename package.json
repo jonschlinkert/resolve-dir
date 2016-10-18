@@ -22,7 +22,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "expand-tilde": "^1.2.2",
+    "expand-tilde": "^2.0.0",
     "global-modules": "^0.2.3"
   },
   "devDependencies": {
