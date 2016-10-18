@@ -10,9 +10,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "LICENSE",
-    "README.md"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -58,8 +56,8 @@
     ],
     "related": {
       "list": [
-        "findup-sync",
         "expand-tilde",
+        "findup-sync",
         "resolve-modules"
       ]
     },
