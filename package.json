@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.9",
+    "homedir-polyfill": "^1.0.1",
     "mocha": "^2.5.3"
   },
   "keywords": [

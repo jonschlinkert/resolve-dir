@@ -8,7 +8,7 @@
 'use strict';
 
 require('mocha');
-var os = require('os');
+var homedir = require('homedir-polyfill');
 var assert = require('assert');
 var gm = require('global-modules');
 var resolve = require('./');
@@ -19,8 +19,8 @@ describe('resolve', function() {
   });
 
   it('should resolve the path to user home:', function() {
-    assert.equal(resolve('~'), os.homedir());
-    assert.equal(resolve('~/foo'), os.homedir() + '/foo');
+    assert.equal(resolve('~'), homedir());
+    assert.equal(resolve('~/foo'), homedir() + '/foo');
   });
 
   it('should resolve the path to global npm modules:', function() {
